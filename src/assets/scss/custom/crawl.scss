@@ -37,6 +37,9 @@
 .li-crawl {
   list-style: none;
   color: #f05a29;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .link-crawl {

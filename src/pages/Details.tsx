@@ -53,10 +53,10 @@ const Details: React.FC = () => {
               </div>
               <div>
                 URLS onde a palavra chave foi encontrada:
-                <ul className="li-crawl">
+                <ul>
                   {crawl?.urls &&
                     crawl?.urls.map((url, i) => (
-                      <li key={i}>
+                      <li key={i} className="li-crawl">
                         <a
                           className="link-crawl"
                           target="_blank"
