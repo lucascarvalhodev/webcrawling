@@ -1,0 +1,22 @@
+.badge-crawl {
+  border: 1px solid #f05a29;
+  padding: 5px 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #f05a29;
+  font-size: 12pt;
+  margin: 5px;
+  transition: 0.5s;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #f05a29;
+  }
+
+  &:active {
+    border: 1px solid #ffffff;
+  }
+}

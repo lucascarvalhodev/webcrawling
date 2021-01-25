@@ -1,0 +1,45 @@
+.page-crawl {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f1f1f1;
+}
+
+.flex-column-align-center-crawl {
+  height: calc(100% - 120px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.flex-column-center-crawl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-crawl {
+  max-width: 800px;
+}
+
+.badge-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .box-empty {
+    color: #f05a29;
+  }
+}
+
+.li-crawl {
+  list-style: none;
+  color: #f05a29;
+}
+
+.link-crawl {
+  text-decoration: none;
+  color: #f05a29;
+}

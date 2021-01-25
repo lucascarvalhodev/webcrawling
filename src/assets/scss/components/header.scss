@@ -1,0 +1,24 @@
+.header-crawl {
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+  @media screen and (max-width: 600px) {
+    justify-content: center;
+
+    .mobile-hidden {
+      display: none;
+    }
+  }
+
+  .title-crawl {
+    color: #f05a29;
+    font-weight: 500;
+    font-size: 20pt;
+  }
+}
