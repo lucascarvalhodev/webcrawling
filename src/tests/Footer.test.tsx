@@ -1,13 +1,13 @@
 import React from "react";
 
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 
 import Footer from "../components/Footer";
 
-describe("test component footer", () => {
-  test("footer", async () => {
+describe("testando component footer", () => {
+  test("testando se o testo passado na props é rederizado", async () => {
     const brand = "Web Crawling";
-    render(<Footer brand={brand} />);
-    screen.getByText(`Todos os direitos reservados a ©${brand}`);
+    const { getByText } = render(<Footer brand={brand} />);
+    getByText(`Todos os direitos reservados a ©${brand}`);
   });
 });
