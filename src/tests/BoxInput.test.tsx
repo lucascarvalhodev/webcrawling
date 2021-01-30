@@ -5,7 +5,7 @@ import { render, fireEvent, waitFor } from "@testing-library/react";
 import BoxInput from "../components/BoxInput";
 
 describe("testando component boxinput", () => {
-  test("testando se o campo é obrigatorio", async () => {
+  test("testando se o input é obrigatorio", async () => {
     const handleSubmit = jest.fn();
 
     const { getByTestId, getByText } = render(
@@ -30,7 +30,7 @@ describe("testando component boxinput", () => {
     expect(handleSubmit).not.toBeCalled();
   });
 
-  test("testando se o minimo requerido é maior ou igual a 4", async () => {
+  test("testando se o input é maior ou igual a 4", async () => {
     const handleSubmit = jest.fn();
 
     const { getByTestId, getByText } = render(
@@ -67,7 +67,7 @@ describe("testando component boxinput", () => {
     expect(handleSubmit).toBeCalled();
   });
 
-  test("testando se o maximo requerido é menor ou igual a 32", async () => {
+  test("testando se o input é menor ou igual a 32", async () => {
     const handleSubmit = jest.fn();
 
     const { getByTestId, getByText } = render(
